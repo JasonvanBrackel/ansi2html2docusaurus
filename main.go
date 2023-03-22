@@ -49,7 +49,7 @@ func main() {
 		line = ReplaceMultiStyle(line)
 		line = ReplaceSingleStyle(line)
 		line = RemoveExtraSemicolon(line)
-
+		fmt.Println(line)
 	}
 	if err := scanner.Err(); err != nil {
 		fmt.Fprintln(os.Stderr, "error reading input:", err)
